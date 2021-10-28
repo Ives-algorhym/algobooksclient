@@ -15,9 +15,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:nowatch": "CI=true react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
+  "eslintConfig": {"test:nowatch": "CI=true react-scripts test --coverage",
     "extends": [
       "react-app",
       "react-app/jest"
